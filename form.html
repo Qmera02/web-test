@@ -1,0 +1,199 @@
+<html>
+    <title>210010118</title>
+    <head>
+        <script>
+            windows.alert("Selamat datang di web saya");
+            
+        </script>
+                <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximumscale=1.0;">
+    </head>
+
+    <link rel="stylesheet" href="style3.css">
+
+   
+    <nav class="navbar navbar-light" style="background-color:aquamarine ;" >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">CA211</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="index.html">Beranda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gambar.html">Gambar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="form.html">Form</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+          <br>
+        <h1 >Formulir Pendaftaran Mahasiswa </h1>
+        <br>
+        
+    <form action="" method="get" name="pendaftaran" >
+        <table class="center">
+            <tr>
+                 <td>Nama Mahasiswa </td>
+                 <td>:</td>
+                 <td><input type="text" name="nama_mhs" placeholder="-Masukan Nama Lengkap-" minlength="3" maxlength="50"
+                  required></td>
+            </tr><script>
+                function fileValidation() {
+                    var fileInput = document.getElementById('img');
+                    if (fileInput.files && fileInput.files[0]) {
+                        var reader = new FileReader();
+                        reader.onload = function(e) {
+                            document.getElementById('upload_img').src = e.target.result;
+                        };
+                        reader.readAsDataURL(fileInput.files[0]);
+                    }
+                } 
+            </script>
+            <tr>
+                <td class="vtop">Foto</td>
+                    
+                    <td>:</td>
+                   <td>  <img src ="img/default.png" id="upload_img"  height="200px"  alt="" ><br>
+                    <input class="form" type="file" id="img" name="img" onchange="fileValidation()" required>
+                     </td>  
+            </tr>
+            
+            <tr>
+                <td>Masukan Alamat Email </td>
+                <td>:</td>
+                <td><input type="email" placeholder="-Masukan Alamat Email-"></td>
+            </tr>
+            <tr>
+                <td>Masukan Tanggal lahir Anda  </td>
+                <td>:</td>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+               <td>Masukan Jenis Kelamin</td>
+               <td>:</td>
+               <td><input type="radio" name="jenis_kelamin" id="laki" value="L">
+                    <label for="laki">Laki-laki</label>
+                    <input type="radio" name="jenis_kelamin" id="Perempuan" value="P">
+                    <label for="laki">Perempuan</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="alamat_rumah" required>Alamat Rumah</label>
+                </td>
+                <td>:</td>
+                <td><textarea name="alamat_rumah" id="alamat_rumah" cols="30" rows="5" maxlength="50" 
+                placeholder="Masukan Alamat anda" required>
+                </textarea></td>
+            </tr>
+            <tr>
+                <td><label for="prodi"></label>Pilihan Program Studi</td>
+                <td>:</td>
+                <td><select name="prodi" id="prodi" required>
+                    <option value="" >-Pilihan Prodi-</option>
+                    <option value="SK">Sistem Komputer</option>
+                    <option value="SI">Sistem Informasi</option>
+                    <option value="TI">Teknik Informasi</option>
+                    <option value="MI">Manajamen Informatika</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td><input type="submit" value="Kirim">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+
+
+            
+        </table> 
+
+
+    </form>
+   
+    <br>
+    </body>
+    <div id="footer">
+        <footer class="text-center text-white" style="background-color: #f1f1f1;">
+            <!-- Grid container -->
+            <div class="container pt-4">
+              <!-- Section: Social media -->
+              <section class="mb-4">
+                <!-- Facebook -->
+                <a
+                  class="btn btn-link btn-floating btn-lg text-dark m-1"
+                  href="#!"
+                  role="button"
+                  data-mdb-ripple-color="dark"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+          
+                <!-- Twitter -->
+                <a
+                  class="btn btn-link btn-floating btn-lg text-dark m-1"
+                  href="#!"
+                  role="button"
+                  data-mdb-ripple-color="dark"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+          
+                <!-- Google -->
+                <a
+                  class="btn btn-link btn-floating btn-lg text-dark m-1"
+                  href="#!"
+                  role="button"
+                  data-mdb-ripple-color="dark"
+                  ><i class="fab fa-google"></i
+                ></a>
+          
+                <!-- Instagram -->
+                <a
+                  class="btn btn-link btn-floating btn-lg text-dark m-1"
+                  href="#!"
+                  role="button"
+                  data-mdb-ripple-color="dark"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+          
+                <!-- Linkedin -->
+                <a
+                  class="btn btn-link btn-floating btn-lg text-dark m-1"
+                  href="#!"
+                  role="button"
+                  data-mdb-ripple-color="dark"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+                <!-- Github -->
+                <a
+                  class="btn btn-link btn-floating btn-lg text-dark m-1"
+                  href="#!"
+                  role="button"
+                  data-mdb-ripple-color="dark"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </section>
+              <!-- Section: Social media -->
+            </div>
+            <!-- Grid container -->
+          
+            <!-- Copyright -->
+            <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+              © 2022 Copyright:
+            <!-- Copyright -->
+          </footer>
+     
+         </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+       
+</html>

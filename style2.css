@@ -1,0 +1,63 @@
+*{
+    margin: 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+h3 {
+    color: white;
+}
+h1{
+    font-size: 29px;
+    text-align : center;
+    font-style: bold;
+    color: black;
+    
+}
+img{
+    height: 155px;
+    width: 154px;
+    border: 2px solid black;
+    
+}
+a{
+    color: teal;
+}
+
+#menu
+{
+    height: 14px;
+    background-color: lightblue;
+    color: black;
+    padding: 14px 20px 15px 20px;
+    z-index: 2;
+    position: sticky;
+    overflow: hidden;
+    top: 0;
+}
+#header  {
+    
+    height: 110px;
+    margin: 0px;
+   
+    background-color: darkcyan ;
+
+    text-align: center;  
+    font-size: 20px;
+    padding: 50px 50px 60px 50px;   
+
+}
+
+#table {
+
+    text-align: center;
+    
+}
+#footer
+{
+padding:  10px 0px 6px 0;
+text-align: center;
+color: white;
+background-color: darkcyan;
+height: 24px;
+}
